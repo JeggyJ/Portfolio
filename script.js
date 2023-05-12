@@ -6,21 +6,21 @@ $(document).ready(function () {
   $('.Contact_Click').click(function(){
     $(this).toggleClass('open_contacts');
     if($(this).hasClass('open_contacts')){
-      $('.Contact_Navbar').css({'height': '100vh', 'opacity': '1'});
+      $('.Contact_Navbar').css({'height': '100vh', 'opacity': '1', 'display': 'flex'});
       $('.close-btn').css({'display':inline-block});
     }
     else {
-      $('.Contact_Navbar').css({'height': '0vh', 'opacity': '0'});
+      $('.Contact_Navbar').css({'height': '0vh', 'opacity': '0', 'display': 'none'});
       $('.close-btn').css({'display':none});
     }
   })
   $('.Contact_Click_Footer').click(function(){
     $(this).toggleClass('open_contacts_Footer');
     if($(this).hasClass('open_contacts_Footer')){
-      $('.Contact_Navbar_Footer').css({'height': '100vh', 'opacity': '1'});
+      $('.Contact_Navbar_Footer').css({'height': '100vh', 'opacity': '1', 'display': 'flex'});
     }
     else {
-      $('.Contact_Navbar_Footer').css({'height': '0vh', 'opacity': '0'});
+      $('.Contact_Navbar_Footer').css({'height': '0vh', 'opacity': '0', 'display': 'none'});
     }
   })
 

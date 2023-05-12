@@ -370,9 +370,6 @@ h1 {
     transform: rotate(5.86deg);
 }
 
-.card:first-child:hover {
-    transform: translateY(-10px) rotate(5.86deg);
-}
 
 .card:nth-child(2) {
     z-index: 1;
@@ -382,9 +379,6 @@ h1 {
     transform: rotate(-5.86deg);
 }
 
-.card:last-child:hover {
-    transform: translateY(-10px) rotate(-5.86deg);
-}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -850,7 +844,7 @@ footer {
     padding: 15px;
     width: 100%;
     height: 0vh;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: all .5s ease;
@@ -866,7 +860,7 @@ footer {
     padding: 15px;
     width: 100%;
     height: 0vh;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: all .5s ease;
