@@ -370,6 +370,9 @@ h1 {
     transform: rotate(5.86deg);
 }
 
+.card:first-child:hover {
+    transform: rotate(5.86deg) translateY(-10px);
+}
 
 .card:nth-child(2) {
     z-index: 1;
@@ -377,6 +380,9 @@ h1 {
 
 .card:last-child {
     transform: rotate(-5.86deg);
+}
+.card:last-child:hover {
+    transform: rotate(-5.86deg) translateY(-10px);
 }
 
 
@@ -840,7 +846,7 @@ footer {
     top: 0;
     right: 0;
     background-color: #f6f6f6;
-    z-index: 1;
+    z-index: -1;
     padding: 15px;
     width: 100%;
     height: 0vh;

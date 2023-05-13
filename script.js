@@ -6,11 +6,11 @@ $(document).ready(function () {
   $('.Contact_Click').click(function(){
     $(this).toggleClass('open_contacts');
     if($(this).hasClass('open_contacts')){
-      $('.Contact_Navbar').css({'height': '100vh', 'opacity': '1', 'display': 'flex'});
+      $('.Contact_Navbar').css({'height': '100vh', 'opacity': '1', 'display': 'flex', 'z-index' : '1'});
       $('.close-btn').css({'display':inline-block});
     }
     else {
-      $('.Contact_Navbar').css({'height': '0vh', 'opacity': '0', 'display': 'none'});
+      $('.Contact_Navbar').css({'height': '0vh', 'opacity': '0', 'display': 'none', 'z-index' : '-1'});
       $('.close-btn').css({'display':none});
     }
   })
